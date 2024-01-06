@@ -1,0 +1,20 @@
+
+##### 1. Why Typescript 
+
+Typescript is a same language like javascript but it is a superset of javascript means vainall js is 100% typescript and add some additional feature to vanilla js but typescript is not 100% same as js.
+
+Our browser but dont know how to run typescript code which means we need a additonal compiler that will convert our ts code to regular js code and it is done by tsConfig.json file present in react with tx app , and this file contain option object which tell how strict typescript will be when type checking rule 
+
+some option are like strict which is if true means type checking will take place and other option is target which contain version of js in which our ts code will be converted to
+
+this ts compiler is similar to what react babel compiler do that is converting jsx code into js 
+
+Typescript help us to catch bug in compile time for Example , if you try to call a method which expects object but you passed string then it will show compile time , but if using only js then no error will be thrown which can lead to crash app in production 
+
+to install react app with typescript command is "npx create-react-app . --template typescript"
+
+in react app with typescript all file extension will become .ts and .tsx instead of .js and .jsx and if by mistake we write .js and .jsx then our app will break
+
+if we look at app.jsx and app.tsx then there is no difference in syntax of code but if we hover on function app in .js file ir will show [ const App: () => any ]  but in .tsx file it will show [ const App: () => JSX.Element ] and meaning of this is that in .js file App is a function which can return any data type but in .tsx file App is a function which will return a jsx element , and this feature of ts is called TYPE INFERENCE which is a default behaviour of ts or tsx file 
+
+
